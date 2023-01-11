@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --main-bg-color: #000;
+  --secondary-color: #000;
+  --primary-color: #FAC539;
+  --main-font-family: 'Roboto', sans-serif;
+  --main-font-size: 16px;
+}
+
+html {
+  font-size: var(--main-font-size);
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font-family);
+}
+
+.logo {
+  --bs-btn-font-weight: bold;
+  --bs-btn-color: var(--secondary-color);
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-hover-color: var(--secondary-color);
+  --bs-btn-hover-bg: var(--primary-color);
+  font-family: 'Roboto', sans-serif;
+}
