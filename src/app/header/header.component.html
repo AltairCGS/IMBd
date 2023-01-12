@@ -1,5 +1,9 @@
-<header>
+<app-menu [isOpened]="isMenuOpened" (close)="toggleMenu()"></app-menu>
+<header class="py-2">
   <div class="container">
-    <a class="logo btn fs-2 p-1" href="/"> My-IMDB </a>
+    <a class="logo btn fs-1dot5 p-1 me-3" href="/"> My-IMDB </a>
+    <button class="btn btn-dark" (click)="toggleMenu()">
+      <fa-icon class="me-2" [icon]="faBars"></fa-icon>Menu
+    </button>
   </div>
 </header>

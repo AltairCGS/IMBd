@@ -3,6 +3,7 @@
 
 :root {
   --main-bg-color: #000;
+  --secondary-bg-color: #121212;
   --secondary-color: #000;
   --primary-color: #FAC539;
   --main-font-family: 'Roboto', sans-serif;
@@ -16,6 +17,14 @@ html {
 body {
   background-color: var(--main-bg-color);
   font-family: var(--main-font-family);
+}
+
+.fs-1dot5 {
+  font-size: 1.5rem;
+}
+
+.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
 }
 
 .logo {
