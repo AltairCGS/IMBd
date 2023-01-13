@@ -1,0 +1,13 @@
+<h3 class="text-light d-flex align-items-center">
+  <fa-icon class="me-2 fs-5 primary-text-color" [icon]="icon"></fa-icon>
+  <span>{{ title }}</span>
+</h3>
+<ul class="list-unstyled ps-4dot5">
+  <li class="mb-2" *ngFor="let item of items">
+    <a
+      [routerLink]="[item.path]"
+      class="text-light text-decoration-none underline-on-hover"
+      >{{ item.text }}</a
+    >
+  </li>
+</ul>

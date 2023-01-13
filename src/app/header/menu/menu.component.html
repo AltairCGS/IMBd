@@ -3,6 +3,9 @@
   [ngClass]="{ 'menu-opened': isOpened }"
 >
   <div class="container">
-    <button class="btn btn-primary" (click)="closeMenu()">close</button>
+    <div class="d-flex mb-5">
+      <button class="btn btn-primary" (click)="closeMenu()">close</button>
+    </div>
+    <app-links [icon]="icon" title="Movies" [items]="items"></app-links>
   </div>
 </div>

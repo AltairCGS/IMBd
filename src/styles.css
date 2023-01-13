@@ -23,8 +23,20 @@ body {
   font-size: 1.5rem;
 }
 
+.ps-4dot5 {
+  padding-left: 2rem;
+}
+
+.primary-text-color {
+  color: var(--primary-color);
+}
+
 .secondary-bg-color {
   background-color: var(--secondary-bg-color);
+}
+
+.underline-on-hover:hover {
+  text-decoration: underline !important;
 }
 
 .logo {
