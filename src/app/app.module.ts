@@ -7,9 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuComponent } from './header/menu/menu.component';
 import { LinksComponent } from './header/menu/links/links.component';
+import { BsMenuComponent } from './header/bs-menu/bs-menu.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, LinksComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, LinksComponent, BsMenuComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

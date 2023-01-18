@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
+
+  --bs-primary: #FAC539;
+
   --main-bg-color: #000;
   --secondary-bg-color: #121212;
   --secondary-color: #000;
@@ -29,6 +32,10 @@ body {
 
 .primary-text-color {
   color: var(--primary-color);
+}
+
+.primary-bg-color {
+  background-color: var(--primary-color);
 }
 
 .secondary-bg-color {

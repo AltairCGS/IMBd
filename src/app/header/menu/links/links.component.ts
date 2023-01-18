@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faCircle, IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { Item } from './item';
+import { SubItem } from '../sub-item';
 
 @Component({
   selector: 'app-links',
@@ -10,7 +10,7 @@ import { Item } from './item';
 export class LinksComponent {
   @Input() icon: IconDefinition = faCircle;
   @Input() title: string = '';
-  @Input() items: Item[] = [];
+  @Input() items: SubItem[] = [];
 
   faCircle = faCircle;
 }

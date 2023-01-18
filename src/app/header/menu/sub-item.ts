@@ -1,4 +1,4 @@
-export interface Item {
+export interface SubItem {
   path: string;
   text: string;
 }

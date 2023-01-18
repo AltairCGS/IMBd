@@ -1,21 +1,18 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import {
+  faXmark,
   faFilm,
   faTv,
   faUserGroup,
-  faXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { Item } from './item';
+import { Item } from '../menu/item';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css'],
+  selector: 'app-bs-menu',
+  templateUrl: './bs-menu.component.html',
+  styleUrls: ['./bs-menu.component.css'],
 })
-export class MenuComponent {
-  @Input() isOpened = false;
-  @Output() close = new EventEmitter();
-
+export class BsMenuComponent {
   faXmark = faXmark;
   items: Item[] = [
     {
@@ -73,8 +70,4 @@ export class MenuComponent {
       ],
     },
   ];
-
-  closeMenu() {
-    this.close.emit();
-  }
 }

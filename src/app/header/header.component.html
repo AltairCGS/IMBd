@@ -1,8 +1,13 @@
-<app-menu [isOpened]="isMenuOpened" (close)="toggleMenu()"></app-menu>
+<!-- <app-menu [isOpened]="isMenuOpened" (close)="toggleMenu()"></app-menu> -->
+<app-bs-menu></app-bs-menu>
 <header class="py-2 secondary-bg-color">
   <div class="container">
     <a class="logo btn fs-1dot5 p-1 me-3" href="/"> My-IMDB </a>
-    <button class="btn btn-dark" (click)="toggleMenu()">
+    <button
+      class="btn btn-dark"
+      data-bs-toggle="modal"
+      data-bs-target="#menuModal"
+    >
       <fa-icon class="me-2" [icon]="faBars"></fa-icon>Menu
     </button>
   </div>
