@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faCircle, IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { SubItem } from '../sub-item';
+import { SubItem } from '../../sub-item';
 
 @Component({
   selector: 'app-links',

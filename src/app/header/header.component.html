@@ -1,10 +1,20 @@
 <!-- <app-menu [isOpened]="isMenuOpened" (close)="toggleMenu()"></app-menu> -->
-<app-bs-menu></app-bs-menu>
+<app-bs-menu [items]="items"></app-bs-menu>
+<app-menu-sidebar [items]="items"></app-menu-sidebar>
 <header class="py-2 secondary-bg-color">
   <div class="container">
+    <button
+      class="btn btn-dark d-lg-none me-3"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasExample"
+      aria-controls="offcanvasExample"
+    >
+      <fa-icon [icon]="faBars"></fa-icon>
+    </button>
     <a class="logo btn fs-1dot5 p-1 me-3" href="/"> My-IMDB </a>
     <button
-      class="btn btn-dark"
+      class="btn btn-dark d-none d-lg-inline-block"
       data-bs-toggle="modal"
       data-bs-target="#menuModal"
     >

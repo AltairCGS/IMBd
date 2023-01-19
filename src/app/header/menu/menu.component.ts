@@ -5,7 +5,7 @@ import {
   faUserGroup,
   faXmark,
 } from '@fortawesome/free-solid-svg-icons';
-import { Item } from './item';
+import { Item } from '../item';
 
 @Component({
   selector: 'app-menu',

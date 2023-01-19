@@ -8,9 +8,11 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MenuComponent } from './header/menu/menu.component';
 import { LinksComponent } from './header/menu/links/links.component';
 import { BsMenuComponent } from './header/bs-menu/bs-menu.component';
+import { MenuSidebarComponent } from './header/menu-sidebar/menu-sidebar.component';
+import { AccordionMenuComponent } from './header/menu-sidebar/accordion-menu/accordion-menu.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, LinksComponent, BsMenuComponent],
+  declarations: [AppComponent, HeaderComponent, MenuComponent, LinksComponent, BsMenuComponent, MenuSidebarComponent, AccordionMenuComponent],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],

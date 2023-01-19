@@ -7,6 +7,7 @@
 
   --main-bg-color: #000;
   --secondary-bg-color: #121212;
+  --text-light: #fff;
   --secondary-color: #000;
   --primary-color: #FAC539;
   --main-font-family: 'Roboto', sans-serif;
@@ -44,6 +45,14 @@ body {
 
 .underline-on-hover:hover {
   text-decoration: underline !important;
+}
+
+.bg-striped {
+  background: url('/assets/img/bg.png');
+}
+
+.offcanvas {
+  --bs-offcanvas-bg: #1F1F1F !important;
 }
 
 .logo {
