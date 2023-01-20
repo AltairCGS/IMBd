@@ -10,9 +10,19 @@ import { LinksComponent } from './header/menu/links/links.component';
 import { BsMenuComponent } from './header/bs-menu/bs-menu.component';
 import { MenuSidebarComponent } from './header/menu-sidebar/menu-sidebar.component';
 import { AccordionMenuComponent } from './header/menu-sidebar/accordion-menu/accordion-menu.component';
+import { MoviesComponent } from './movies/movies.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MenuComponent, LinksComponent, BsMenuComponent, MenuSidebarComponent, AccordionMenuComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    MenuComponent,
+    LinksComponent,
+    BsMenuComponent,
+    MenuSidebarComponent,
+    AccordionMenuComponent,
+    MoviesComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
