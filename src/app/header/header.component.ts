@@ -1,10 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import {
-  faBars,
-  faFilm,
-  faTv,
-  faUserGroup,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { environment } from 'src/environments/environment';
 import { Item } from './item';
 import { MenuService } from './menu.service';
 
@@ -17,69 +14,15 @@ export class HeaderComponent implements OnInit {
   faBars = faBars;
   // isMenuOpened = false;
 
-  constructor(private menuService: MenuService) {}
+  constructor(private menuService: MenuService, private http: HttpClient) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      const items: Item[] = [
-        {
-          icon: faFilm,
-          title: 'Movies',
-          subItems: [
-            {
-              path: '/',
-              text: 'item 1',
-            },
-            {
-              path: '/',
-              text: 'item 2',
-            },
-            {
-              path: '/',
-              text: 'item 3',
-            },
-          ],
-        },
-        {
-          icon: faTv,
-          title: 'TV Shows',
-          subItems: [
-            {
-              path: '/',
-              text: 'item 4',
-            },
-            {
-              path: '/',
-              text: 'item 5',
-            },
-            {
-              path: '/',
-              text: 'item 6',
-            },
-          ],
-        },
-        {
-          icon: faUserGroup,
-          title: 'Celebs',
-          subItems: [
-            {
-              path: '/',
-              text: 'item 7',
-            },
-            {
-              path: '/',
-              text: 'item 8',
-            },
-            {
-              path: '/',
-              text: 'item 9',
-            },
-          ],
-        },
-      ];
-      this.menuService.menuItemsBehaviorSubject.next(items);
-      console.log('items loaded');
-    }, 5000);
+    this.http
+      .get<Item[]>(`${environment.apiUrl}/menuItems`)
+      .subscribe((data) => {
+        this.menuService.menuItemsBehaviorSubject.next(data);
+        console.log(data);
+      });
   }
 
   /* toggleMenu() {

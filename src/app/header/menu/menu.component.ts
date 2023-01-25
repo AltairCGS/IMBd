@@ -19,7 +19,7 @@ export class MenuComponent {
   faXmark = faXmark;
   items: Item[] = [
     {
-      icon: faFilm,
+      icon: 'film',
       title: 'Movies',
       subItems: [
         {
@@ -37,7 +37,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faTv,
+      icon: 'tv',
       title: 'TV Shows',
       subItems: [
         {
@@ -55,7 +55,7 @@ export class MenuComponent {
       ],
     },
     {
-      icon: faUserGroup,
+      icon: 'user-group',
       title: 'Celebs',
       subItems: [
         {
