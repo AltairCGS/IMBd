@@ -42,8 +42,6 @@ export class SectionMoviesComponent implements OnInit {
   title: 'Título de la tarjeta 3'
   }
   ];
-  
-
 
   miVariable: OwlOptions = {
     loop: true,
@@ -53,7 +51,7 @@ export class SectionMoviesComponent implements OnInit {
     dots: false,
     navSpeed: 400,
     slideBy: 6,
-    navText: ['<i class="fa-solid fa-angle-left"></i>', '<i class="fa-solid fa-angle-right"></i>'],
+    navText: ['<i class="fa-solid fa-angle-right"></i>', '<i class="fa-solid fa-angle-left"></i>'],
     responsive: {
       0: {
         items: 1
