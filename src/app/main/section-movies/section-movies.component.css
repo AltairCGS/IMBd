@@ -3,7 +3,7 @@
     position: absolute;
     margin-left: -12px;
     width: 4px;
-    height: 75%;
+    height: 105%;
     border-radius: 2px;
     background: var(--primary-color);
     align-self: center;
@@ -27,4 +27,9 @@
 .container-tittle p{
     transform: translateX(-13px);
     font-weight: 400;
+    /* padding-left: 10rem; */
+}
+
+.container-tittle {
+    padding-left: 22rem;
 }

@@ -3,6 +3,8 @@
 }
 .card{
     border: none !important;
+    border-radius: none;
+    height: 200px;
 }
 
 .card .card-body #fav{
@@ -11,7 +13,7 @@
     background-color: transparent;
     border: none;
     position: relative;
-    border-radius:4px ;
+    /* border-radius:4px ; */
     height: 36px;
 }
 .card .card-body #fav:hover{
@@ -43,15 +45,28 @@
 }
 .card img{
     width: 100%;
-    height: 100%;
+    height: 274px;
     object-fit: cover;
-    max-height: 225px;
+    max-height: 274px;
 }
 .play{
     width: auto !important; 
     font-weight: 500;
     
 }
+
+.movie-title {
+    height: 60px;
+}
+
+.movie-title a :hover {
+    text-decoration: underline;
+}
+
+.movie-trailer a {
+    text-decoration: none;
+}
+
 
 
 @media only screen and (max-width: 767px) {
