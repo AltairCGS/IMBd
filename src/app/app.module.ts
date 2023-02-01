@@ -16,6 +16,9 @@ import { AccordionMenuComponent } from './header/menu-sidebar/accordion-menu/acc
 import { MoviesComponent } from './movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { MainComponent } from './main/main.component';
+import { SectionMoviesComponent } from './main/section-movies/section-movies.component';
+import { CardMoviesComponent } from './main/section-movies/card-movies/card-movies.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
     MenuSidebarComponent,
     AccordionMenuComponent,
     MoviesComponent,
+    MainComponent,
+    SectionMoviesComponent,
+    CardMoviesComponent,
   ],
   imports: [
     BrowserModule,

@@ -12,12 +12,15 @@
   --primary-color: #FAC539;
   --main-font-family: 'Roboto', sans-serif;
   --main-font-size: 16px;
+  --terciary-color : #1a1a1a;
 }
 
 html {
   font-size: var(--main-font-size);
 }
-
+.terciary{
+  background-color: var(--terciary-color);
+}
 body {
   background-color: var(--main-bg-color);
   font-family: var(--main-font-family);

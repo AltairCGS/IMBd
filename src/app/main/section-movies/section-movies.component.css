@@ -1,0 +1,30 @@
+ .tittle-movies::before{
+    content: "";
+    position: absolute;
+    margin-left: -12px;
+    width: 4px;
+    height: 75%;
+    border-radius: 2px;
+    background: var(--primary-color);
+    align-self: center;
+    padding-right: 5px;
+
+    
+} 
+.tittle-movies{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.tittle-movies:hover i{
+    color: var(--primary-color);
+
+
+}
+
+.container-tittle p{
+    transform: translateX(-13px);
+    font-weight: 400;
+}
