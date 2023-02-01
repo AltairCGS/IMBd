@@ -66,3 +66,44 @@ body {
   --bs-btn-hover-bg: var(--primary-color);
   font-family: 'Roboto', sans-serif;
 }
+
+.container-cards .owl-next, .container-cards .owl-prev{
+  background: hsla(0,0%,7%,.45)!important;
+  border: 1px solid hsla(0,0%,100%,.7)!important;
+  transition: all .25s ease-out!important;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 20%;
+}
+
+.container-cards .owl-next{
+  right: 20px;
+  transform: translate(-50%, -50%);
+}
+
+.container-cards .owl-prev{
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.container-cards .owl-next i, .container-cards .owl-prev i{
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-cards .owl-next:hover, .container-cards .owl-prev:hover{
+ color: var(--primary-color)!important; 
+}
+
+.pruebas{
+  margin-left: 40px;
+}
+
+.p-5{
+  padding: 20px 0 0 0!important;
+  margin-left: 70px;
+}
