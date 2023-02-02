@@ -8,6 +8,9 @@ import { Component, Input } from '@angular/core';
 })
 export class CardMoviesComponent {
   @Input() titleCard: string = "";
+  @Input() imageCard: string = "";
+  @Input() calificacion: string = "";
+  @Input() trailer: string = "";
 
   title = 'Card Movies';
   

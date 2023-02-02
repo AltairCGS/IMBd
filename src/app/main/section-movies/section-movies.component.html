@@ -9,8 +9,14 @@
   </p>
 </div>
 <div class="container-cards d-flex gap-4 justify-content-center">
+  <!-- <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide><app-card-movies/></ng-template> 
+  </owl-carousel-o> -->
   <app-card-movies
     *ngFor="let item of movieCollection"
     [titleCard]="item.titleMovie"
+    [imageCard]="item.movieImage"
+    [calificacion]="item.calificacion"
+    [trailer]="item.trailer"
   ></app-card-movies>
 </div>

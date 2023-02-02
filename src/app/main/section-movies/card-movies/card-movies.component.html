@@ -1,7 +1,7 @@
 <div class="card" style="width: 11.5rem">
   <a href=""
     ><img
-      src="https://m.media-amazon.com/images/M/MV5BODljOTY2NzEtZGM1OC00MGM3LWIxZTYtOTg0NmIzNzg1ZjUzXkEyXkFqcGdeQXVyMTU5OTA4NTIz._V1_QL75_UX280_CR0,0,280,414_.jpg"
+      src={{imageCard}}
       alt="..."
   /></a>
   <div class="card-body terciary px-1 py-2">
@@ -11,7 +11,7 @@
       <h5
         class="card-title fs-6 text-light text-opacity-75 align-items-baseline m-0"
       >
-        <i class="fa-solid fa-star"></i> 9,3
+        <i class="fa-solid fa-star"></i> {{calificacion}}
       </h5>
       <button
         id="fav"
@@ -34,7 +34,7 @@
           id="fav"
           class="btn text-light fs-6 d-flex play align-items-center movie-trailer"
         >
-          <a href="" class="text-light"><i class="fa-solid fa-play me-2"></i> Trailer</a>
+          <a href={{trailer}} class="text-light" target="_blanck"><i class="fa-solid fa-play me-2"></i> Trailer</a>
         </button>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -19,6 +19,9 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { MainComponent } from './main/main.component';
 import { SectionMoviesComponent } from './main/section-movies/section-movies.component';
 import { CardMoviesComponent } from './main/section-movies/card-movies/card-movies.component';
+import { CarouselModule } from 'ngx-owl-carousel-o'; //para el slider
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { CardMoviesComponent } from './main/section-movies/card-movies/card-movi
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    CarouselModule,
+    BrowserAnimationsModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
