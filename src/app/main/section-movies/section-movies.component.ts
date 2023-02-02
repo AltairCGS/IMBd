@@ -57,7 +57,7 @@ export class SectionMoviesComponent {
     }, {
       titleMovie: 'Glass Onion',
       movieImage: 'https://m.media-amazon.com/images/M/MV5BZmE2YWE1MDgtODgwYS00N2JjLTg4NGMtMzkyYTZhNjA0MTFhXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_QL75_UX280_CR0,0,280,414_.jpg',
-      trailer: 'https://www.youtube.com/watch?v=yyGetSp7CIc',
+      trailer: 'https://www.youtube.com/watch?v=tFXrdgtNBD4',
       calificacion: '7.2'
     }, {
       titleMovie: 'Avatar: El camino del agua',
