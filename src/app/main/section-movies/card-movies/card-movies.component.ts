@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-movies.component.css']
 })
 export class CardMoviesComponent {
+  @Input() titleCard: string = "";
+  @Input() imageCard: string = "";
+  @Input() calificacion: string = "";
+  @Input() trailer: string = "";
+
   title = 'Card Movies';
 
   constructor() { }

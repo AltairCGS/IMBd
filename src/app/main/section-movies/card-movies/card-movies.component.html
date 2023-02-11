@@ -1,25 +1,42 @@
-
-  <div class="card" style="width: 9.6rem;">
-  <img src="https://img.freepik.com/foto-gratis/primer-disparo-vertical-lindo-gato-europeo-pelo-corto_181624-34587.jpg?w=360&t=st=1674778183~exp=1674778783~hmac=ce041b1b96291530def3674eaec5e8c7bc3c4571d390c2f7ce89f4046bc4d6ff" class="card-img-top" alt="...">
+<div class="card" style="width: 11.5rem">
+  <a href=""
+    ><img
+      src={{imageCard}}
+      alt="..."
+  /></a>
   <div class="card-body terciary px-1 py-2">
-    <div class="d-flex p-1 container-stars position-relative align-items-center">
-      <h5 class="card-title fs-6 b text-light text-opacity-75 align-items-baseline m-0"><i class="fa-solid fa-star"></i> 9,3</h5>
-      <button id="fav" class="d-flex justify-content-center ms-2 align-items-center"> <i id="star" class="fa-regular fa-star"></i></button>
+    <div
+      class="d-flex p-1 container-stars position-relative align-items-center"
+    >
+      <h5
+        class="card-title fs-6 text-light text-opacity-75 align-items-baseline m-0"
+      >
+        <i class="fa-solid fa-star"></i> {{calificacion}}
+      </h5>
+      <button
+        id="fav"
+        class="d-flex justify-content-center ms-2 align-items-center"
+      >
+        <i id="star" class="fa-regular fa-star"></i>
+      </button>
     </div>
-    <p class="card-text text-light mb-4 ms-1">The Last Of Us</p>
+    <div class="movie-title">
+      <a href="" style="text-decoration: none"
+        ><p class="card-text text-light ms-1">{{ titleCard }}</p></a
+      >
+    </div>
     <div class="d-flex justify-content-center flex-column">
-      <a href="#" class="follow p-2 rounded-1 text-decoration-none mb-3">+ Lista de segui...</a>
-      <div class="text-light d-flex justify-content-between">
-        <button id="fav" class="btn text-light fs-6 d-flex play justify-content-center align-items-center ">
-          <i class="fa-solid fa-play me-2"></i> Trailer
-        </button>
-        <button id="fav" class="btn text-light fs-6 d-flex play justify-content-center align-items-center ">
-          <i class="fa-solid fa-circle-info"></i>
+      <a href="#" class="follow p-2 rounded-1 text-decoration-none mb-3"
+        >+ Lista de visualiz...</a
+      >
+      <div class="text-light d-flex justify-content-center">
+        <button
+          id="fav"
+          class="btn text-light fs-6 d-flex play align-items-center movie-trailer"
+        >
+          <a href={{trailer}} class="text-light" target="_blanck"><i class="fa-solid fa-play me-2"></i> Trailer</a>
         </button>
       </div>
     </div>
   </div>
 </div>
- 
-
- 
