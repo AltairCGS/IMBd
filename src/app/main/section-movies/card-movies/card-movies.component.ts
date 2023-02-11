@@ -13,6 +13,7 @@ export class CardMoviesComponent {
   @Input() trailer: string = "";
 
   title = 'Card Movies';
+  
 
   constructor() { }
   

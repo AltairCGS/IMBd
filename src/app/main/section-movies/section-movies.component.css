@@ -4,6 +4,7 @@
     margin-left: -12px;
     width: 4px;
     height: 105%;
+    height: 105%;
     border-radius: 2px;
     background: var(--primary-color);
     align-self: center;
@@ -38,3 +39,4 @@
     padding-left: 21rem;
     padding-right: 21rem;
 }
+
