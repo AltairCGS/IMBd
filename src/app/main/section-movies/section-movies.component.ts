@@ -21,16 +21,22 @@ export class SectionMoviesComponent implements OnInit {
     slideBy: -6,
     navText: ['<i class="fa-solid fa-angle-right"></i>', '<i class="fa-solid fa-angle-left"></i>'],
     responsive: {
-      0: {
-        items: 1
-      },
-      400: {
+      300: {
         items: 2
       },
-      740: {
+      460: {
+        items: 2
+      },
+      650: {
         items: 3
       },
-      940: {
+      800: {
+        items: 4
+      },
+      1020: {
+        items: 5
+      },
+      1125: {
         items: 6
       }
     },
